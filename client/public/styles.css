@@ -1,0 +1,48 @@
+body {
+  background-color: plum !important;
+}
+
+/* ============ Home Page ============ */
+
+#home-page {
+  text-align: center;
+}
+
+/* ============ odds converter and calculator ============ */
+
+.odds-input-container {
+  display: inline-flex;
+}
+
+.type-odds-label {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.odds-input {
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 9px;
+}
+
+.bet-input-container {
+  margin-top: 20px;
+  display: inline-flex;
+}
+
+.bet-number-label {
+  padding: 10px;
+  font-weight: bold
+}
+
+.bet-input {
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 9px;
+}
+
+/* ============ Navbar ============ */
+
+.navbar {
+  background-color: white;
+}

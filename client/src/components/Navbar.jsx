@@ -7,7 +7,7 @@ function Navigation() {
     <Navbar>
       <Nav>
         <NavItem>
-          <NavLink href="/home">Home</NavLink>
+          <NavLink href="/">Home</NavLink>
         </NavItem>
         <NavItem>
           <NavLink href="/wagers">My Wagers</NavLink>
@@ -17,6 +17,11 @@ function Navigation() {
         </NavItem>
         <NavItem>
           <NavLink href="/calculator">Odds Calculator</NavLink>
+        </NavItem>
+      </Nav>
+      <Nav>
+        <NavItem>
+          <NavLink href="/SignIn">Sign In</NavLink>
         </NavItem>
       </Nav>
     </Navbar>

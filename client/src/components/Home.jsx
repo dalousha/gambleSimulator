@@ -10,9 +10,21 @@ class Home extends React.Component {
 
   render() {
     return(
-      <div>
+      <div id="home-page">
         <h1>This is the home page.</h1>
-        why is this not working
+
+        This is the home page.
+        <br/>
+        This is the home page.<br/>
+        This is the home page.<br/>
+        This is the home page.<br/>
+        This is the home page.<br/>
+        This is the home page.<br/>
+        This is the home page.<br/>
+        This is the home page.<br/>
+        This is the home page.<br/>
+        This is the home page.<br/>
+        This is the home page.
       </div>
     )
   }

@@ -46,3 +46,33 @@ body {
 .navbar {
   background-color: white;
 }
+
+.login-button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 7px 16px;
+  margin: 5px;
+  text-align: center;
+}
+
+/* ============ Login Modals ============ */
+
+.credentials-input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.login-button-modal {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}

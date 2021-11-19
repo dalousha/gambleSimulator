@@ -1,11 +1,10 @@
-import './App.css';
 import { Routes, Route } from 'react-router-dom';
 
 import Navbar from "./components/Navbar.jsx";
 import Home from "./components/Home.jsx";
 import OddsCalculator from "./components/OddsCalculator.jsx";
 import MyAccount from "./components/MyAccount.jsx";
-import SignIn from "./components/SignIn.jsx";
+import SignInModal from "./components/SignInModal.jsx";
 
 function App() {
   return (
@@ -16,7 +15,7 @@ function App() {
           <Route path="/wagers" element={<Home />}/>
           <Route path="/myAccount" element={<MyAccount />} />
           <Route path="/calculator" element={<OddsCalculator />} />
-          <Route exact path="/SignIn" element={<SignIn />} />
+          <Route exact path="/SignIn" element={<SignInModal />} />
         </Routes>
     </>
   );

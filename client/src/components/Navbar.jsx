@@ -2,7 +2,6 @@ import React from 'react';
 // import { NavLink } from 'react-router-dom';
 import { Navbar, Nav, NavItem, NavLink } from 'reactstrap';
 
-
 function Navigation() {
   return(
     <Navbar>
@@ -14,7 +13,7 @@ function Navigation() {
           <NavLink href="/wagers">My Wagers</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="/">My Account</NavLink>
+          <NavLink href="/myAccount">My Account</NavLink>
         </NavItem>
         <NavItem>
           <NavLink href="/calculator">Odds Calculator</NavLink>

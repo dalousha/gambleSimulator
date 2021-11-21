@@ -44,8 +44,12 @@ class Navigation extends React.Component {
             <NavLink href="/myAccount">My Account</NavLink>
           </NavItem>
           <NavItem>
+            <NavLink href="/leaderboards">Leaderboards</NavLink>
+          </NavItem>
+          <NavItem>
             <NavLink href="/calculator">Odds Calculator</NavLink>
           </NavItem>
+
         </Nav>
         <Nav>
           <NavItem>

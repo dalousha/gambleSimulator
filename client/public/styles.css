@@ -76,3 +76,10 @@ body {
   cursor: pointer;
   width: 100%;
 }
+
+/* ============ Leaderboards ============ */
+
+.leaderboard-page {
+  text-align: center;
+  justify-content: center;
+}

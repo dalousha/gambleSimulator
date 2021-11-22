@@ -1,11 +1,12 @@
 import React from 'react';
 import $ from 'jquery';
+import LeaderboardTile from './LeaderboardTile.jsx'
 
 class Leaderboards extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      topUsers: ''
+      topUsers: []
     }
 
     this.getData = this.getData.bind(this);
@@ -20,9 +21,12 @@ class Leaderboards extends React.Component {
     Promise.all([
       this.getTopUsers()
     ]).then(responses => {
-      console.log('response:', responses[0]);
+      var users = [];
+      for (var i = 0; i < responses[0].length; i++) {
+        users.push(responses[0][i].username)
+      }
       this.setState({
-        topUsers: responses[0][0].username
+        topUsers: users
       })
     })
   }
@@ -41,9 +45,15 @@ class Leaderboards extends React.Component {
   }
 
   render() {
+    console.log('here', this.state.topUsers)
     return (
-      <div>
-        <h1>{this.state.topUsers} is the on top of the leaderboards</h1>
+      <div className="leaderboard-page">
+        <h1> {this.state.topUsers[0]} is the on top of the leaderboards</h1>
+        <div className="leaderboards-container">
+          {this.state.topUsers.map((user, index) =>
+            <LeaderboardTile key={index} index={index} user={user}/>
+          )}
+        </div>
       </div>
     )
   }

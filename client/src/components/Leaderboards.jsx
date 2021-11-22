@@ -5,7 +5,7 @@ class Leaderboards extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      topUsers: []
+      topUsers: ''
     }
 
     this.getData = this.getData.bind(this);
@@ -16,17 +16,13 @@ class Leaderboards extends React.Component {
     this.getData();
   }
 
-  componentDidUpdate() {
-    this.getData();
-  }
-
   getData() {
     Promise.all([
       this.getTopUsers()
     ]).then(responses => {
-      console.log(responses);
+      console.log('response:', responses[0]);
       this.setState({
-        topUsers: responses[0]
+        topUsers: responses[0][0].username
       })
     })
   }
@@ -47,7 +43,7 @@ class Leaderboards extends React.Component {
   render() {
     return (
       <div>
-        Hello
+        <h1>{this.state.topUsers} is the on top of the leaderboards</h1>
       </div>
     )
   }

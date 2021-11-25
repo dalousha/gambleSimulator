@@ -38,7 +38,7 @@ class Navigation extends React.Component {
             <NavLink href="/">Home</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink href="/wagers">My Wagers</NavLink>
+            <NavLink href="/myWagers">My Wagers</NavLink>
           </NavItem>
           <NavItem>
             <NavLink href="/myAccount">My Account</NavLink>

@@ -1,5 +1,6 @@
 /* eslint-disable no-useless-constructor */
 import React from 'react';
+import Sidebar from './Sidebar.jsx'
 
 class MyAccount extends React.Component {
   constructor(props) {
@@ -9,7 +10,11 @@ class MyAccount extends React.Component {
   render() {
     return (
       <div>
-        <h1>This is your account page!</h1>
+        <div>
+          <h1>This is your account page!</h1>
+        </div>
+
+        <Sidebar/>
       </div>
     )
   }

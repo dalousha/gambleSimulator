@@ -69,7 +69,6 @@ class SignUpModal extends React.Component {
       success: (data) => {console.log('POSTED')}
     })
     console.log('now here', this.state)
-    e.preventDefault()
   }
 
   render() {

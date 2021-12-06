@@ -24,6 +24,8 @@ app.get('/', (req, res) => {
   res.send('hi')
 })
 
+
+// ROUTES
 app.use('/users', users);
 
 
